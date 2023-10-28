@@ -1,5 +1,5 @@
 {% set name = "multiscale-spatial-image" %}
-{% set version = "0.11.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multiscale_spatial_image-{{ version }}.tar.gz
-  sha256: 07db47c3358bdfad9688a5ee8064a219ec72a43deb65e30bd4e591adfe35d10f
+  sha256: 0b3a5aae1cabc5bb6b742b9ee583b82fcf4219479725abca5ff0a4e3e5536c06
 
 build:
   noarch: python
