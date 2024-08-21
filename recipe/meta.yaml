@@ -28,6 +28,7 @@ requirements:
     - spatial-image >=0.2.1
     - xarray
     - xarray-datatree >=0.0.5
+    - python-dateutil
     - zarr  # Used but not declared
 
 test:
@@ -49,3 +50,5 @@ about:
 extra:
   recipe-maintainers:
     - goanpeca
+    - thewtex
+    - LucaMarconato
