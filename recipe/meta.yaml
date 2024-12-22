@@ -6,25 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/multiscale_spatial_image-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multiscale_spatial_image-{{ version }}.tar.gz
   sha256: 0b3a5aae1cabc5bb6b742b9ee583b82fcf4219479725abca5ff0a4e3e5536c06
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - dask-core
     - dask-image
     # - itk-filtering >=5.3.0  # Optional dependency
     - numpy
-    - python >=3.8
+    - python >={{ python_min }}
     - spatial-image >=0.2.1
     - xarray
     - xarray-datatree >=0.0.5
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/multiscale-spatial-image
