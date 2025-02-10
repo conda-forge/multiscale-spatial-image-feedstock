@@ -28,6 +28,7 @@ requirements:
     - python-dateutil
     - spatial-image >=0.2.1
     - xarray >=2024.10.0
+    - xarray-dataclasses >=1.8.0
     - zarr  # Used but not declared
 
 test:
