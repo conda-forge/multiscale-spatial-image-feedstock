@@ -25,9 +25,9 @@ requirements:
     # - itk-filtering >=5.3.0  # Optional dependency
     - numpy
     - python >={{ python_min }}
+    - python-dateutil
     - spatial-image >=0.2.1
-    - xarray >=2023.12.0
-    - xarray-datatree >=0.0.5
+    - xarray >=2024.10.0
     - zarr  # Used but not declared
 
 test:
@@ -37,7 +37,6 @@ test:
     - pip list
     - pip check
   requires:
-    - python 3.10
     - pip
     - python {{ python_min }}
 
