@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -53,3 +53,6 @@ extra:
   recipe-maintainers:
     - goanpeca
     - LucaMarconato
+    - giovp
+    - melonora
+    - timtreis
