@@ -36,7 +36,6 @@ test:
     - pip list
     - pip check
   requires:
-    - python 3.10
     - pip
     - python {{ python_min }}
 
