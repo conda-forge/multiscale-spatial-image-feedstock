@@ -146,5 +146,8 @@ Feedstock Maintainers
 =====================
 
 * [@LucaMarconato](https://github.com/LucaMarconato/)
+* [@giovp](https://github.com/giovp/)
 * [@goanpeca](https://github.com/goanpeca/)
+* [@melonora](https://github.com/melonora/)
+* [@timtreis](https://github.com/timtreis/)
 
