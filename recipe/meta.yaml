@@ -21,8 +21,8 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - dask-core
-    - dask-image
+    - dask #-core
+    # - dask-image
     # - itk-filtering >=5.3.0  # Optional dependency
     - numpy
     - python >={{ python_min }}
