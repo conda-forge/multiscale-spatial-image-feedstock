@@ -23,7 +23,6 @@ requirements:
   run:
     - dask #-core
     # - dask-image
-    # - itk-filtering >=5.3.0  # Optional dependency
     - numpy
     - python >={{ python_min }}
     - python-dateutil
