@@ -1,5 +1,5 @@
 {% set name = "multiscale-spatial-image" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/multiscale_spatial_image-{{ version }}.tar.gz
-  sha256: 3b0ef86559fd9369ca384b657a740edfaf567b308021ac51281a3efdb6ccdcfc
+  sha256: 0b72b20785c5c8bbae7aea0608ca53e02d61fd76720b10473aeafb97e1616cab
 
 build:
   noarch: python
@@ -21,14 +21,14 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - dask-core
-    - dask-image
-    # - itk-filtering >=5.3.0  # Optional dependency
+    - dask #-core
+    # - dask-image
     - numpy
     - python >={{ python_min }}
     - python-dateutil
-    - spatial-image >=0.2.1
-    - xarray >=2024.10.0
+    - spatial-image >=1.2.2
+    - xarray >=2025.1.2
+    - xarray-dataclass >=3.0.0
     - zarr  # Used but not declared
 
 test:
